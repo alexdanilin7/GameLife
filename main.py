@@ -95,16 +95,12 @@ def main():
     screen = pygame.display.set_mode(size)
     clock = pygame.time.Clock()
     pygame.display.set_caption('Игра «Жизнь»')
-
     board = Life(30, 30, 10, 10, 15)
-
-    # Включено ли обновление поля
+    # Включено ли обновление
     time_on = False
     ticks = 0
     speed = 10
-
     running = True
-
     while running:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
